@@ -5,7 +5,7 @@
 module ChapterFive_Pt3 where
 
 -- getUserName
-getUserName :: [Char] -> [Char]
+getUserName :: (Num a) => a -> a
 getUserName (x:xs) 
  | x /= '@' = x:(getUserName xs)
  | otherwise = []   
